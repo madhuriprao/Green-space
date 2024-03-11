@@ -1,0 +1,150 @@
+.container {
+   font-family: "Miriam Libre", sans-serif;
+   background-image: url("../images/Garden-House-Cyprus-christos-pavlou-6-810x540.jpg");
+   background-position: center;
+   background-size: 100%;
+   background-repeat: repeat-y;
+   backdrop-filter: blur(2px);
+}
+header {
+   display: flex;
+   /*align-items: center;*/
+   align-items: flex-end;
+   justify-content: space-between;
+   height: 140px;
+   background-color: #ffffff9a;
+   padding: 20px;
+   margin-top: 25px;
+}
+.logo {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+.logo__house {
+   width: 126px;
+   padding: 10px;
+}
+h1 {
+   font-family: "Trocchi", serif;
+   font-size: 34px;
+}
+.nav__list {
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+   padding: 10px;
+   margin: 10px;
+}
+li {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px;
+}
+a {
+   text-decoration: none;
+   color: #000000;
+}
+.nav__list-contact {
+   background-color: #7ba376;
+   border-radius: 0px 27.5px;
+   cursor: pointer;
+}
+.main {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.discription {
+   /*text-align: center; */
+   background-color: hsla(0, 0%, 96%, 0.906);
+   border-radius: 4px;
+   padding: 50px;
+   margin: 30px;
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 660px;
+   height: 660px;
+   background-color: #7ba376;
+   border-radius: 4px;
+   padding: 50px;
+   margin: 30px;
+}
+.form__title {
+   font-size: 30px;
+   color: #063349;
+   padding: 10px;
+}
+.name,
+.email,
+.tel,
+.message {
+   font-size: 20px;
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 20px;
+}
+input {
+   width: 500px;
+   border: none;
+   border-bottom: 1px solid #f5f5f5;
+   background: transparent;
+}
+textarea {
+   width: 500px;
+   height: 200px;
+   border: none;
+}
+button {
+   color: #f5f5f5;
+   font-size: 25px;
+   background-color: #ef660a;
+   border-style: none;
+   width: 200px;
+   height: 50px;
+   border-radius: 0px 27.5px;
+   cursor: pointer;
+   margin: 10px;
+}
+button:hover {
+   color: #f5f5f5;
+   background-color: #063349;
+}
+.contact {
+   display: grid;
+   width: 700px;
+   height: 40vh;
+   grid-template-columns: 2fr 1fr;
+   grid-template-rows: 2fr 1fr;
+   gap: 1rem;
+   color: #f5f5f5;
+   background-color: #063349;
+   border-radius: 4px;
+   padding: 30px;
+   margin: 30px;
+}
+i {
+   width: 50px;
+}
+.contact__info {
+   grid-column: 1/2;
+   grid-row: 1/2;
+}
+.contact__openinghours {
+   grid-column: 2/3;
+   grid-row: 1/2;
+}
+.contact__socialmedia {
+   grid-column: 2/3;
+   grid-row: 2/3;
+}
+.map {
+   color: rgb(2, 252, 252);
+}
