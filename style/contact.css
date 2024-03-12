@@ -3,16 +3,16 @@
    background-image: url("../images/341714.jpg");
    background-position: center;
    background-size: 100%;
-   /*background-repeat: repeat-x;*/
+   background-repeat: no-repeat;
    background-position: top;
+   background-color: #7ba376;
    backdrop-filter: blur(2px);
 }
 header {
    display: flex;
-   /*align-items: center;*/
    align-items: flex-end;
    justify-content: space-between;
-   height: 140px;
+   height: 105px;
    background-color: #ffffff9a;
    padding: 20px;
    margin-top: 25px;
@@ -23,14 +23,15 @@ header {
    justify-content: flex-start;
 }
 .logo__house {
-   width: 126px;
+   width: 86px;
    padding: 10px;
 }
 h1 {
    font-family: "Trocchi", serif;
    font-size: 34px;
 }
-.nav__list {
+.nav__list,
+.footer__list {
    display: flex;
    align-items: flex-end;
    justify-content: space-between;
@@ -60,7 +61,7 @@ a {
 }
 .discription {
    /*text-align: center; */
-   background-color: hsla(0, 0%, 96%, 0.906);
+   background-color: rgba(245, 245, 245, 0.9);
    border-radius: 4px;
    padding: 50px;
    margin: 30px;
@@ -73,20 +74,21 @@ a {
    align-items: center;
    width: 660px;
    height: 660px;
-   background-color: #7ba376;
+   background-color: #063349;
    border-radius: 4px;
    padding: 50px;
    margin: 30px;
 }
 .form__title {
    font-size: 30px;
-   color: #063349;
+   color: #f5f5f5;
    padding: 10px;
 }
 .name,
 .email,
 .tel,
 .message {
+   color: #f5f5f5;
    font-size: 20px;
    display: flex;
    flex-direction: column;
@@ -116,7 +118,7 @@ button {
 }
 button:hover {
    color: #f5f5f5;
-   background-color: #063349;
+   background-color: #7ba376;
 }
 .contact {
    display: grid;
@@ -125,8 +127,8 @@ button:hover {
    grid-template-columns: 2fr 1fr;
    grid-template-rows: 2fr 1fr;
    gap: 1rem;
-   color: #f5f5f5;
-   background-color: #063349;
+   color: #000000;
+   background-color: rgba(245, 245, 245, 0.9);
    border-radius: 4px;
    padding: 30px;
    margin: 30px;
@@ -147,5 +149,21 @@ i {
    grid-row: 2/3;
 }
 .map {
-   color: rgb(2, 252, 252);
+   color: #ef660a;
+   padding: 7px;
+   border-radius: 4px;
+}
+footer {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   height: 50px;
+   background-color: #ffffff9a;
+   padding: 20px;
+   margin-top: 25px;
+}
+.footer__nav {
+   display: flex;
+   text-align: center;
+   justify-content: space-between;
 }
