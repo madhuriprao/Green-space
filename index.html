@@ -13,26 +13,48 @@
   </head>
 
   <body>
-    <header class="background">
-      <div class="upper overlay"></div>
-      <div class="upper">
-      <img class="img" src="images\villa_lawn.jpg" alt="large villa with a nice green lawn" id="background_img"></div>
-      <div class="lower"></div>
+    <!--background-setup-->
+    <div class="body__overlay"></div>
+    
+    <!--navigation bar for header-->
+    <header>
+      <nav class="navigation header">
+          <a class="header__logo" href="/index.html">
+            <svg class="svg logo"><use href="images\logo.svg#logo"></use></svg></a>
+          <a class="header__txt" href="/index.html"><p class="txt logo">Green Spaces</p></a>
+
+        <ul class="header__links"><!--links needs to be filled out-->
+          <li class="header__li one"><a href="#"><button class="btn gallery">Gallery</button></a></li>
+          <li class="header__li two"><a href="#"><button class="btn about">About Us</button></a></li>
+          <li class="header__li three"><a href="#"><button class="btn contact">Contact</button></a></li>
+        </ul>
+      </nav>
     </header>
 
-    <nav>
-      <div class="navigation bar"></div>
-      <img src="images\logo.svg" alt="vector logo with a house" id="logo_one">
-      <h1 class="title">Green Spaces</h1>
-    </nav>
+    <div class="shadow"></div><!--shadow element for background decoration-->
 
+    <!--main page-->
     <main>
-    <div class="page">
-      <div class="border">
-        <img src="images\logo.svg" alt="vector logo with a house" id="logo_two">
+      <div class="container one"> <!--main page background-->
+        <div id="border">
+          <svg class="svg main"><use href="images\logo.svg#logo"></use></svg>
+        </div>
       </div>
-    </div>
     </main>
+    
 
+    <!--navigation bar for footer-->
+    <footer>
+      <nav class="navigation footer">
+        <ul class="footer__links"><!--links needs to be filled out-->
+          <li class="footer__li one"><a class="link gallery" href="#">Gallery</a></li>
+          <li class="footer__li two"><a class="link about" href="#">About Us</a></li>
+          <li class="footer__li three"><a class="link contact" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+   
+    
+    
   </body>
 </html>
