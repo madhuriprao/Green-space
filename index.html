@@ -8,50 +8,83 @@
     <link rel="stylesheet" href="style/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&family=Trocchi&display=swap" 
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&family=Trocchi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
 
   <body>
     <!--background-setup-->
-    <div class="body__overlay"></div>
+    <div class="body overlay"></div>
     
     <!--navigation bar for header-->
     <header>
-      <nav class="navigation header">
-          <a class="header__logo" href="/index.html">
+      <div class="container header">
+         <a class="header logo" href="/index.html">
             <svg class="svg logo"><use href="images\logo.svg#logo"></use></svg></a>
-          <a class="header__txt" href="/index.html"><p class="txt logo">Green Spaces</p></a>
-
-        <ul class="header__links"><!--links needs to be filled out-->
-          <li class="header__li one"><a href="#"><button class="btn gallery">Gallery</button></a></li>
-          <li class="header__li two"><a href="#"><button class="btn about">About Us</button></a></li>
-          <li class="header__li three"><a href="#"><button class="btn contact">Contact</button></a></li>
-        </ul>
-      </nav>
+         <a class="header txt" href="/index.html"><p class="txt logo">Green Spaces</p></a>
+         
+         <nav class="navigation">  
+            <ul class="header links"><!--links needs to be filled out-->
+               <li class="header__li one">
+                  <a href="./Pages/gallery.html"><button class="btn gallery">Gallery</button></a></li>
+               <li class="header__li two">
+                  <a href="./Pages/aboutus.html"><button class="btn about">About Us</button></a></li>
+               <li class="header__li three">
+                  <a href="./Pages/contact.html"><button class="btn contact">Contact</button></a></li>
+            </ul>
+         </nav>
+      </div>
     </header>
 
     <div class="shadow"></div><!--shadow element for background decoration-->
 
     <!--main page-->
     <main>
-      <div class="container one"> <!--main page background-->
-        <div id="border">
+      <div class="border">
+        <div class="container one">
           <svg class="svg main"><use href="images\logo.svg#logo"></use></svg>
+
+          <div class="card txt">
+            <h1>Lorem Ipsum</h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+            <h2>Etiam tempor orci eu lobortis elementum nibh tellus molestie nunc. Aliquam faucibus purus in massa tempor nec.</h2>
+          </div>
+
+          <div class="img__slide">
+            <img class="img house1" src="./images/House1.jpg" alt="interior of a house with a foliage area and a woman walking next to it">
+            <img class="img house2" src="./images/House2.jpg" alt="exterior of a house with a tranquil decor and looking into an open dining area">
+          </div>
         </div>
       </div>
+
+        <div class="container two">
+          <img class="img House3" src="./images/House3.jpg" alt="modern-styled patch of greenery inside a paved backgarden">
+
+          <div class="card txt">
+            <h1>Lorem Ipsum</h1>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+            <h3>Habitant morbi tristique senectus et netus et malesuada fames. Dui ut ornare lectus sit amet est. Sed enim ut sem viverra aliquet eget sit amet tellus.</h3>
+            <h3>A diam maecenas sed enim ut sem viverra. Ornare massa eget egestas purus viverra accumsan in nisl nisi. Egestas erat imperdiet sed euismod nisi porta lorem.
+            Iaculis nunc sed augue lacus viverra vitae. Sit amet consectetur adipiscing elit duis tristique.</h3>
+
+            <button class="btn subscribe">subscribe to our newsletter</button>
+            
+          </div>
+        </div>
     </main>
     
 
     <!--navigation bar for footer-->
     <footer>
-      <nav class="navigation footer">
-        <ul class="footer__links"><!--links needs to be filled out-->
-          <li class="footer__li one"><a class="link gallery" href="#">Gallery</a></li>
-          <li class="footer__li two"><a class="link about" href="#">About Us</a></li>
-          <li class="footer__li three"><a class="link contact" href="#">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="container footer">
+        <nav class="navigation">
+          <ul class="footer links"><!--links needs to be filled out-->
+            <li class="footer__li one"><a class="link gallery" href="./Pages/gallery.html">Gallery</a></li>
+            <li class="footer__li two"><a class="link about" href="./Pages/aboutus.html">About Us</a></li>
+            <li class="footer__li three"><a class="link contact" href="./Pages/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </footer>
    
     
